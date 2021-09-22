@@ -7,7 +7,7 @@ var title = 'Can you guess the button I have in mind?';
 document.getElementById('revealResults').innerHTML = reveal;
 
 function RNG() {
-    RNGresult = Math.floor(Math.random() * Math.floor(3));
+    RNGresult = Math.floor(Math.random() * 3)+1;
     console.log(RNGresult);
 } 
 
@@ -16,6 +16,7 @@ function gameButton(selection) {
     if (selection === RNGresult) {
         title = 'You guessed right!';
         score = score + 1;
+        misses = misses + 1;
         updatePlay();
     } else {
         title = 'Better luck next time!';
