@@ -20,15 +20,15 @@ function gameButton(selection) {
         updatePlay();
     } else {
         title = 'Better luck next time!';
-        misses = misses + 1;
+        misses += + 1;
         updatePlay();
     };
 };
 
 function results() {
-    if (RNGresult === 0) {
+    if (RNGresult === 1) {
         reveal = 'X -- O -- O';
-    } else if (RNGresult === 1) {
+    } else if (RNGresult === 2) {
         reveal = 'O -- X -- O';
     } else {
         reveal = 'O -- O -- X';
