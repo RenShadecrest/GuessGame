@@ -15,8 +15,8 @@ function gameButton(selection) {
     RNG();
     if (selection === RNGresult) {
         title = 'You guessed right!';
-        score = score + 1;
-        misses = misses + 1;
+        score += 1;
+        misses += 1;
         updatePlay();
     } else {
         title = 'Better luck next time!';
