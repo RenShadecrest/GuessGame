@@ -20,10 +20,10 @@ function gameButton(selection) {
         updatePlay();
     } else {
         title = 'Better luck next time!';
-        misses += + 1;
+        misses += 1;
         updatePlay();
-    };
-};
+    }
+}
 
 function results() {
     if (RNGresult === 1) {
@@ -47,7 +47,7 @@ function reset() {
     score = 0;
     misses = 0;
     updatePlay();
-};
+}
 
 document.getElementById('title').innerHTML = title;
 document.getElementById('scoreboard').innerHTML = 'Take your best shot!';
