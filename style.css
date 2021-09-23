@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+
+a:link { color: white; text-decoration: none;}
+a:visited { color: white; text-decoration: none;}
+a:hover { color: gold; text-decoration: none;}
+a:active { color: gold; text-decoration: none;}
+
+header {
+	padding-top: 40px;
+}
+
+main, header {
+	color:white;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+h1 {
+	font-family: cursive;
+	font-size: 55px;
+}
+
+h2 {
+	font-style: italic;
+	font-size: 28px;
+}
+
+body {
+	background-color: black;
+}
+
+button {
+	color: black;
+	border-radius: 7px;
+	font-size: 20px;
+	padding: 10px 50px;
+	margin: 40px 10px 7px 10px;
+	font-family: cursive;
+	background-color: white;
+	border: 0px;
+}
+
+.reset {
+	padding: 2px 10px;
+	font-style: bold;
+}
+
+.whiteout:hover {
+	background-color: blue;
+	color: blue;
+}
+
+.whiteout:active {
+	background-color: deepskyblue;
+	color: deepskyblue;
+}
+
+.reset:hover {
+	background-color: red;
+}
+
+.reset:active {
+	background-color: orangered;
+	color: yellow;
+}
+
+.results {
+	margin: 35px auto 30px auto;
+	font-size: 40px;
+	letter-spacing: 17px;
+	background-color: white;
+	color: black;
+	padding: 20px 0px;
+	border-radius: 25px;
+	width: 500px;
+	font-style: bold;
+	border: 0px;
+}
+
+.whiteout {
+	color: white;
+}
+
+p {
+	margin: 0px;
+}
+
+h2, .score {
+	letter-spacing: 2px;
+}
+
+.score {
+	font-size: 25px;
+	font-style: italic;
+}
+
+footer {
+	width: 120px;
+	text-align: center;
+	margin: 35px auto 30px auto;
+	background-color: mediumpurple;
+	font-style: italic;
+	border-radius: 50px;
+	margin-top: 100px;
+}

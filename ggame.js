@@ -1,7 +1,7 @@
 var RNGresult;
 let score = 0;
 let misses = 0;
-var reveal = '? -- ? -- ?';
+var reveal = '? \xa0\xa0 ? \xa0\xa0 ?';
 var title = 'Can you guess the button I have in mind?';
 
 document.getElementById('revealResults').innerHTML = reveal;
@@ -27,11 +27,11 @@ function gameButton(selection) {
 
 function results() {
     if (RNGresult === 1) {
-        reveal = 'X -- O -- O';
+        reveal = 'X \xa0\xa0 O \xa0\xa0 O';
     } else if (RNGresult === 2) {
-        reveal = 'O -- X -- O';
+        reveal = 'O \xa0\xa0 X \xa0\xa0 O';
     } else {
-        reveal = 'O -- O -- X';
+        reveal = 'O \xa0\xa0 O \xa0\xa0 X';
     }
 }
 

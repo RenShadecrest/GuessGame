@@ -1,23 +1,29 @@
-<html>
-    <title>
-    </title>
-    <header>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>A Simple Guessing Game - by Michael Slaton</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
     <body>
-    <center>
-        <h3><p id=title></p></h3>
-        <p id=revealResults></p>
-        <p id=guessButtons>
-            <button type="button" onclick="gameButton(1)" id="gameButton1">O</button>
-            <button type="button" onclick="gameButton(2)" id="gameButton2">O</button>
-            <button type="button" onclick="gameButton(3)" id="gameButton3">O</button>
-        </p>
-        <p id=scoreboard></p>
-        <p id=controls>
-            <button type="button" onclick="reset()">Reset Score</button>
-        </p>
-        <script src='ggame.js'>
-        </script>
-    </center>
+			<header>
+				<h1>A simple guessing game!</h1>
+			</header>
+		<main>
+			<h2><p id=title></p></h2>
+			<p id=revealResults class="results"></p>
+        	<p id=scoreboard class="score"></p>
+			<div id=guessButtons>
+					<button type="button" onclick="gameButton(1)" id="gameButton1" class="whiteout">O</button>
+					<button type="button" onclick="gameButton(2)" id="gameButton2" class="whiteout">O</button>
+					<button type="button" onclick="gameButton(3)" id="gameButton3" class="whiteout">O</button>
+			</div>
+			<div id=controls>
+				<button type="button" onclick="reset()" class="reset">Reset Score</button>
+			</div>
+		</main>
+		<footer>Michael Slaton©</footer>
+		<script src='ggame.js'></script>
     </body>
 </html>
